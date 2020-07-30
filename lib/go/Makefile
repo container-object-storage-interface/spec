@@ -124,7 +124,7 @@ export PATH := $(shell pwd):$(PATH)
 ########################################################################
 COSI_PROTO := ../../cosi.proto
 COSI_PKG_ROOT := github.com/container-object-storage-interface/spec
-COSI_PKG_SUB := $(shell cat $(COSI_PROTO) | sed -n -e 's/^package.\([^;]*\).v[0-9]\+;$$/\1/p'|tr '.' '/')
+COSI_PKG_SUB := ../../
 COSI_BUILD := $(COSI_PKG_SUB)/.build
 COSI_GO := $(COSI_PKG_SUB)/cosi.pb.go
 COSI_A := cosi.a
